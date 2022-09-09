@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+
+
+.container{
+    margin: 10px;
+    padding: 5px;
+}
+
+.container-header h1{
+    text-align: center;
+    align-items: flex-end;
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(10,8,92);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-body{
+    background-color: rgb(208,223,245);
+    height: 630px;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+span{
+    font-size: 25px;
+    font-weight: 100;
+    text-align: justify;
+    color:rgb(115, 10, 10);
+}
+
+form{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 550px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.form-group{
+    align-items: center;
+    
+}
+
+.col1{
+    float: left;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 50px;
+    width: 350px;
+    align-items: center;
+
+}
+
+.col2{
+    float: right;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 650px;
+}
+
+.product_name_col{
+    width: 200px;
+}
+
+table.first_table{
+    height: 480px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+tbody{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.second_table{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+td{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: auto;
+}
+
+input.form-control{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 25px;
+    width: 550px;
+    height: 50px;
+    text-align: center;
+}
+
+textarea{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 25px;
+    width: 550px;
+    height: 90px;
+    text-align: center;
+}
+
+#add_btn{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 30px;
+    background-color: rgb(25,60,92);
+    color: #ddd;
+    width: 200px;
+    height: 60px;
+}
+
+#view_btn{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 30px;
+    background-color: rgb(25,60,92);
+    color: #ddd;
+    width: 200px;
+    height: 60px;
+}
+
+.product-header{
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(10,8,92);
+    font-size: 30px;
+}
+
+/* Responsive View Products */
+.all_products {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh ;
+  }
+  
+.each_product{
+    display: block;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .each_product{
+      flex-basis: 33%;
+    }
+  }
+  
+  @media screen and (max-width:1023px) {
+    .each_product{
+      flex-basis: 50%;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width:717px) {
+    .each_product{
+      flex-basis: 100%;
+    }
+  }
+
+.each_product{
+    font-size: 20px;
+}
+
+.image{
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+  
+#filter {
+      padding:auto;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+}
+
+
+/* */
+/* Single Products */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+    height: 800px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0; 
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 20px;
+}
+
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px ;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+.small-image-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.section-p1{
+    display: flex;
+}
+.single-pro-image img{
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 500px;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
